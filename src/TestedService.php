@@ -6,8 +6,11 @@ use InvalidArgumentException;
 
 class TestedService
 {
-    private Dependency $provider;
-    private array $config;
+    /** @var Dependency */
+    private $provider;
+
+    /** @var array */
+    private $config;
 
     public function __construct(Dependency $dependency, array $cfg)
     {
